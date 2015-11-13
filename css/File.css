@@ -1,0 +1,133 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	color: #333;
+	font: 14px Sans-Serif;
+	padding: 50px;
+	background: #eee;
+}
+
+#contai {
+	box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+	position: relative;
+	background: white; 
+}
+
+
+h2 {
+	font-size: 16px;
+	text-align: center;
+	padding: 0 0 12px 0; 
+}
+
+
+.rig ul {
+	background-color: #F3F3F3;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 15px 0;
+	padding:10px;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+.rig li a {
+	color: #663300;
+	display: block;
+	padding: 5px 10px;
+}
+
+
+.rig li:first-of-type a {
+	background: url(../Images/file.png) no-repeat 10px 50%;
+	padding-left: 35px;
+
+}
+
+
+.rig li:not(:first-of-type) a {
+	background-image: none !important;
+} 
+
+.rig ul:nth-of-type(odd) {
+	background-color: #E6E6E6;
+}
+
+.rig ul:hover li{
+	background-color:#CACACA;
+}
+
+.rig ul:hover li a {
+	color: #000;
+}
+
+
+
+
+
+/* icons for file types (icons by famfamfam) */
+
+/* ../Images */
+.rig li:first-of-type a[href$=".jpg"], 
+.rig li:first-of-type a[href$=".png"], 
+.rig li:first-of-type a[href$=".gif"], 
+.rig li:first-of-type a[href$=".svg"], 
+.rig li:first-of-type a[href$=".jpeg"]
+{background-image: url(../Images/image.png);}
+
+/* zips */
+.rig li:first-of-type a[href$=".zip"] 
+{background-image: url(../Images/zip.png);}
+
+/* css */
+.rig li:first-of-type a[href$=".css"] 
+{background-image: url(../Images/css.png);}
+
+/* docs */
+.rig li:first-of-type a[href$=".doc"],
+.rig li:first-of-type a[href$=".docx"],
+.rig li:first-of-type a[href$=".ppt"],
+.rig li:first-of-type a[href$=".pptx"],
+.rig li:first-of-type a[href$=".pps"],
+.rig li:first-of-type a[href$=".ppsx"],
+.rig li:first-of-type a[href$=".xls"],
+.rig li:first-of-type a[href$=".xlsx"]
+{background-image: url(../Images/office.png)}
+
+/* videos */
+.rig li:first-of-type a[href$=".avi"], 
+.rig li:first-of-type a[href$=".wmv"], 
+.rig li:first-of-type a[href$=".mp4"], 
+.rig li:first-of-type a[href$=".mov"], 
+.rig li:first-of-type a[href$=".m4a"]
+{background-image: url(../Images/video.png);}
+
+/* audio */
+.rig li:first-of-type a[href$=".mp3"], 
+.rig li:first-of-type a[href$=".ogg"], 
+.rig li:first-of-type a[href$=".aac"], 
+.rig li:first-of-type a[href$=".wma"] 
+{background-image: url(../Images/audio.png);}
+
+/* web pages */
+.rig li:first-of-type a[href$=".html"],
+.rig li:first-of-type a[href$=".htm"],
+.rig li:first-of-type a[href$=".xml"]
+{background-image: url(../Images/xml.png);}
+
+.rig li:first-of-type a[href$=".php"] 
+{background-image: url(../Images/php.png);}
+
+.rig li:first-of-type a[href$=".js"] 
+{background-image: url(../Images/script.png);}
+
+/* directories */
+.rig ul.dir :first-of-type a
+{background-image: url(../Images/folder.png);}
